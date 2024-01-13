@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Geist';
+    src: local('GeistVariableVF'), url(./assets/GeistVariableVF.woff2) format('woff2');
+}
+
+* {
+    font-family: 'Geist'
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: theme("colors.neutral.300");
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: theme("colors.neutral.400");
+}
